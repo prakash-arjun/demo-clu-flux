@@ -116,7 +116,7 @@ metadata:
     nginx.ingress.kubernetes.io/affinity-mode: persistent
 spec:
   rules:
-  - host: real.baeke.info
+  - host: real.arjun.info
     http:
       paths:
       - path: /
