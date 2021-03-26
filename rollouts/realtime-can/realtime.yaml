@@ -48,7 +48,7 @@ spec:
   selector:
     matchLabels:
       app: realtime
-  replicas: 3
+  replicas: 5
   template:
     metadata:
       labels:
@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
       - name: realtimeapp
-        image: gbaeke/fluxapp:1.0.2
+        image: gbaeke/fluxapp:1.0.1
         env:
         - name: REDISHOST
           value: "redisapp:6379"
